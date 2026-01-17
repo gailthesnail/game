@@ -1,6 +1,6 @@
-package uk.ac.mmu.game.applicationcode.domainmodel;
+package uk.ac.mmu.game.applicationcode.domainmodel.playerSelection;
 
-import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerSelector;
+import uk.ac.mmu.game.applicationcode.domainmodel.Player;
 
 import java.util.Iterator;
 

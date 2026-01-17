@@ -1,7 +1,7 @@
 package uk.ac.mmu.game.temp;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
-import uk.ac.mmu.game.applicationcode.domainmodel.PlayerIterable;
+import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerIterable;
 import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
 import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerSelector;
 import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;

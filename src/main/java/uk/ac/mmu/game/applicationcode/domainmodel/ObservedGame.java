@@ -1,6 +1,7 @@
 package uk.ac.mmu.game.applicationcode.domainmodel;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
+import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerIterable;
 import uk.ac.mmu.game.infrastructure.output.events.InitialiseEvent;
 import uk.ac.mmu.game.infrastructure.output.events.MoveEvent;
 import uk.ac.mmu.game.infrastructure.output.events.RollEvent;
@@ -78,7 +79,7 @@ public class ObservedGame {
 
             int collidedPlayer = player.hitStrategyCheck(hitStrategy, shake, player.getPosition(), player.getPlayerNumber(), currentPlayerPositions);
 
-            if (player.hitStrategyCheck(hitStrategy, shake, player.getPosition(), player.getPlayerNumber(), currentPlayerPositions) != player.getPlayerNumber()) {
+            if (collidedPlayer != player.getPlayerNumber()) {
                 player.hitStrategyOutcome(hitStrategy, playerList[collidedPlayer].getName(), currentPlayerPositions[collidedPlayer], shake, indexStrategy, start);
             } else {
                 player.advance(shake, indexStrategy);
