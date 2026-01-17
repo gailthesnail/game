@@ -1,10 +1,16 @@
 package uk.ac.mmu.game.applicationcode.usecase.play;
 
 
+import uk.ac.mmu.game.applicationcode.domainmodel.LargeBoard;
+import uk.ac.mmu.game.applicationcode.domainmodel.Player;
+import uk.ac.mmu.game.applicationcode.domainmodel.rules.NeedToLandOnEndToWin;
+import uk.ac.mmu.game.applicationcode.domainmodel.rules.StaysIfHitAnotherPlayer;
 import uk.ac.mmu.game.applicationcode.usecase.Required;
-import uk.ac.mmu.game.temp.*;
-
-import static uk.ac.mmu.game.temp.LargeBoard.*;
+import uk.ac.mmu.game.infrastructure.observer.GameObserver;
+import uk.ac.mmu.game.infrastructure.observer.ObservedGame;
+import uk.ac.mmu.game.infrastructure.playerSelection.FourPlayerSelector;
+import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
+import uk.ac.mmu.game.infrastructure.dice.NonRandomDiceShaker;
 
 public class UseCase implements Provided {
 

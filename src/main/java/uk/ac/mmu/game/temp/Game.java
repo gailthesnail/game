@@ -1,21 +1,31 @@
 package uk.ac.mmu.game.temp;
 
+import uk.ac.mmu.game.applicationcode.domainmodel.Player;
+import uk.ac.mmu.game.applicationcode.domainmodel.PlayerIterable;
+import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
+import uk.ac.mmu.game.infrastructure.dice.DiceShakerFactory;
+import uk.ac.mmu.game.infrastructure.dice.DoubleDiceShakerFactory;
+import uk.ac.mmu.game.infrastructure.dice.SingleDiceShakerFactory;
+import uk.ac.mmu.game.infrastructure.playerSelection.PlayerSelector;
+import uk.ac.mmu.game.infrastructure.strategy.HitStrategy;
+import uk.ac.mmu.game.infrastructure.strategy.IndexStrategy;
+
 public class Game {
-    public static void run() {
-        DiceShakerFactory factory = new SingleDiceShakerFactory();
-        show(factory);
+//    public static void run() {
+//        DiceShakerFactory factory = new SingleDiceShakerFactory();
+//        show(factory);
+//
+//        factory = new DoubleDiceShakerFactory();
+//        show(factory);
+//
+//    }
 
-        factory = new DoubleDiceShakerFactory();
-        show(factory);
-
-    }
-
-    private static void show(DiceShakerFactory factory) {
-        DiceShaker shaker = new ConsoleWriter(factory.create());
-        shaker.shake();
-        shaker.shake();
-        shaker.shake();
-    }
+//    private static void show(DiceShakerFactory factory) {
+//        DiceShaker shaker = new ConsoleWriter(factory.create());
+//        shaker.shake();
+//        shaker.shake();
+//        shaker.shake();
+//    }
 
 
     public void BasicGame(DiceShaker dice, IndexStrategy indexStrategy, HitStrategy hitStrategy, Player[] playerList, PlayerSelector players) {

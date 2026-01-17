@@ -2,6 +2,18 @@
 //import SingleDiceShakerFactory;
 package uk.ac.mmu.game.temp;
 
+import uk.ac.mmu.game.applicationcode.domainmodel.LargeBoard;
+import uk.ac.mmu.game.applicationcode.domainmodel.Player;
+import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
+import uk.ac.mmu.game.applicationcode.domainmodel.rules.DoesNotNeedToLandOnEndToWin;
+import uk.ac.mmu.game.applicationcode.domainmodel.rules.MovesIfHitAnotherPlayer;
+import uk.ac.mmu.game.applicationcode.domainmodel.rules.NeedToLandOnEndToWin;
+import uk.ac.mmu.game.applicationcode.domainmodel.rules.StaysIfHitAnotherPlayer;
+import uk.ac.mmu.game.infrastructure.dice.NonRandomDiceShaker;
+import uk.ac.mmu.game.infrastructure.observer.GameObserver;
+import uk.ac.mmu.game.infrastructure.observer.ObservedGame;
+import uk.ac.mmu.game.infrastructure.playerSelection.FourPlayerSelector;
+
 public class Main {
     public static void main(String[] args) {
         //DiceShakerFactory factory = new SingleDiceShakerFactory();
@@ -73,7 +85,7 @@ public class Main {
 
         DiceShaker nonrandom3 = new NonRandomDiceShaker( new int[]{7,3,8,5,7,6,8,7,6,8,2,4,4,8,5,7,8,3,9,9,7,5,7,9});
         System.out.println("4 Players, large board, basic rules ({7,3,8,5,7,6,8,7,6,8,2,4,4,8,5,7,8,3,9,9,7,5,7,9) ");
-        observedGame.ObserveGame(nonrandom3, new DoesNotNeedToLandOnEndToWin(), new MovesIfHitAnotherPlayer(),FourPlayerList, new FourPlayerSelector());
+        //observedGame.ObserveGame(nonrandom3, new DoesNotNeedToLandOnEndToWin(), new MovesIfHitAnotherPlayer(),FourPlayerList, new FourPlayerSelector());
 
 //
 //        StateMachine stateMachine = new StateMachine();
