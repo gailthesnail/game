@@ -35,7 +35,7 @@ public class MovesIfHitAnotherPlayer implements HitStrategy {
 
     @Override
     public void outcome(String collidedPlayerName, int collidedPlayerPosition, Player player, int shake, IndexStrategy indexStrategy, String start) {
-        player.advance(shake,indexStrategy );
+        player.advance(shake,indexStrategy);
         onHitMove(collidedPlayerName, collidedPlayerPosition, player.getName(), start, player.getPositionAsString());
     }
 
