@@ -1,7 +1,7 @@
 package uk.ac.mmu.game.applicationcode.domainmodel;
 
-import uk.ac.mmu.game.infrastructure.strategy.HitStrategy;
-import uk.ac.mmu.game.infrastructure.strategy.IndexStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
 
 public class Player {
 
@@ -60,20 +60,12 @@ public class Player {
             return String.format("Position %d", getPosition());
     }
 
-//    public void advance(int positions) {
-//        currentIndex = currentIndex + positions;
-//        if (currentIndex > Board.END_OF_TAIL_INDEX) {
-//            currentIndex = Board.END_OF_TAIL_INDEX;
-//        }
-//    }
-
     public int hitStrategyCheck(HitStrategy hitStrategy, int shake, int currentPosition, int playerNumber, int[] otherPlayerPositions) {
         return hitStrategy.move(shake, currentIndex,currentPosition,playerNumber, otherPlayerPositions, START_OF_TAIL_INDEX);
     }
 
     public void hitStrategyOutcome(HitStrategy hitStrategy, String collidedPlayerName, int collidedPlayerPosition, int shake, IndexStrategy indexStrategy, String start) {
         hitStrategy.outcome(collidedPlayerName, collidedPlayerPosition, this, shake, indexStrategy,start);
-        //System.out.format("%s Position %s hit! %n",playerList[collidedPlayer].getName(), currentPlayerPositions[collidedPlayer]);
     }
 
     public void indexStrategyOutcome(IndexStrategy indexStrategy) {

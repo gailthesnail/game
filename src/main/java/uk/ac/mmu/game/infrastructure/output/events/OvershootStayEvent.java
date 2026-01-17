@@ -1,22 +1,16 @@
-package uk.ac.mmu.game.infrastructure.events;
+package uk.ac.mmu.game.infrastructure.output.events;
 
-public class MoveEvent {
+public class OvershootStayEvent {
     private final String playerName;
-    private final String start;
     private final String position;
 
-    public MoveEvent(String playerName, String start, String position) {
+    public OvershootStayEvent(String playerName, String position) {
         this.playerName = playerName;
-        this.start = start;
         this.position = position;
     }
 
     public String getPlayerName() {
         return playerName;
-    }
-
-    public String getStart() {
-        return start;
     }
 
     public String getPosition() {

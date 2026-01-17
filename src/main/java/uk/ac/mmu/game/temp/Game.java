@@ -3,12 +3,9 @@ package uk.ac.mmu.game.temp;
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
 import uk.ac.mmu.game.applicationcode.domainmodel.PlayerIterable;
 import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
-import uk.ac.mmu.game.infrastructure.dice.DiceShakerFactory;
-import uk.ac.mmu.game.infrastructure.dice.DoubleDiceShakerFactory;
-import uk.ac.mmu.game.infrastructure.dice.SingleDiceShakerFactory;
-import uk.ac.mmu.game.infrastructure.playerSelection.PlayerSelector;
-import uk.ac.mmu.game.infrastructure.strategy.HitStrategy;
-import uk.ac.mmu.game.infrastructure.strategy.IndexStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerSelector;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
 
 public class Game {
 //    public static void run() {

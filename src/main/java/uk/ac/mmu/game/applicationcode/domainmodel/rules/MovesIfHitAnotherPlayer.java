@@ -1,10 +1,10 @@
 package uk.ac.mmu.game.applicationcode.domainmodel.rules;
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
-import uk.ac.mmu.game.infrastructure.events.HitMoveEvent;
-import uk.ac.mmu.game.infrastructure.observer.GameObserver;
-import uk.ac.mmu.game.infrastructure.observer.Observer;
-import uk.ac.mmu.game.infrastructure.strategy.HitStrategy;
-import uk.ac.mmu.game.infrastructure.strategy.IndexStrategy;
+import uk.ac.mmu.game.infrastructure.output.events.HitMoveEvent;
+import uk.ac.mmu.game.infrastructure.output.GameObserver;
+import uk.ac.mmu.game.applicationcode.domainmodel.observer.Observer;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.function.Consumer;
 public class MovesIfHitAnotherPlayer implements HitStrategy {
     final List<Observer> observers = new ArrayList<>();
 
-    MovesIfHitAnotherPlayer(){
+    public MovesIfHitAnotherPlayer(){
         observers.add(new GameObserver());
     }
 

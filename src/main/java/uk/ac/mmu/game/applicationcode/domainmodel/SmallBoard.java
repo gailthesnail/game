@@ -1,7 +1,7 @@
 package uk.ac.mmu.game.applicationcode.domainmodel;
 
 public class SmallBoard implements Board {
-    public final static int START_OF_TAIL_INDEX = 18; //private modifier?
+    public final static int START_OF_TAIL_INDEX = 18;
     public final static int END_OF_TAIL_INDEX = 20;
 
     public final static int[] RED_POSITIONS = new int[]{

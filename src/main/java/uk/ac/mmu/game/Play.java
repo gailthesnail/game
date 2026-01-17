@@ -13,7 +13,6 @@ class Play implements org.springframework.boot.CommandLineRunner, Ordered {
         this.usecase = usecase;
     }
 
-
     @Override
     public void run(String... args)  {
         System.out.println("Played Game");

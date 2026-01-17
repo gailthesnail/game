@@ -1,6 +1,4 @@
-package uk.ac.mmu.game.infrastructure.dice;
-
-import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
+package uk.ac.mmu.game.applicationcode.domainmodel.dice;
 
 public class DiceShakerDecorator implements DiceShaker {
     private final DiceShaker component;

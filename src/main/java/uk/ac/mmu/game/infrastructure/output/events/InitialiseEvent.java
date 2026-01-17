@@ -1,9 +1,9 @@
-package uk.ac.mmu.game.infrastructure.events;
+package uk.ac.mmu.game.infrastructure.output.events;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
-import uk.ac.mmu.game.infrastructure.strategy.HitStrategy;
-import uk.ac.mmu.game.infrastructure.strategy.IndexStrategy;
-import uk.ac.mmu.game.infrastructure.playerSelection.PlayerSelector;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerSelector;
 
 public class InitialiseEvent {
     private final DiceShaker dice;

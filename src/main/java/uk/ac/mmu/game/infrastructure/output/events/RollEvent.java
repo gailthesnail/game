@@ -1,4 +1,4 @@
-package uk.ac.mmu.game.infrastructure.events;
+package uk.ac.mmu.game.infrastructure.output.events;
 
 public class RollEvent {
     private final String playerName;

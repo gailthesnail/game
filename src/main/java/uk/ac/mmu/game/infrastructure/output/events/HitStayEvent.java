@@ -1,17 +1,15 @@
-package uk.ac.mmu.game.infrastructure.events;
+package uk.ac.mmu.game.infrastructure.output.events;
 
-public class HitMoveEvent {
+public class HitStayEvent {
     private final String collidedPlayerName;
     private final int collidedPlayerPosition;
     private final String playerName;
-    private final String start;
     private final String position;
 
-    public HitMoveEvent(String collidedPlayerName, int collidedPlayerPosition, String playerName,String start, String position) {
+    public HitStayEvent(String collidedPlayerName, int collidedPlayerPosition, String playerName, String position) {
         this.collidedPlayerName = collidedPlayerName;
         this.collidedPlayerPosition = collidedPlayerPosition;
         this.playerName = playerName;
-        this.start = start;
         this.position = position;
     }
 
@@ -25,10 +23,6 @@ public class HitMoveEvent {
 
     public String getPlayerName() {
         return playerName;
-    }
-
-    public String getStart() {
-        return start;
     }
 
     public String getPosition() {

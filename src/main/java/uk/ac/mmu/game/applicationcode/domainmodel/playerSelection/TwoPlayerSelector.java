@@ -1,10 +1,10 @@
-package uk.ac.mmu.game.infrastructure.playerSelection;
+package uk.ac.mmu.game.applicationcode.domainmodel.playerSelection;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
 import uk.ac.mmu.game.applicationcode.domainmodel.SmallBoard;
 
 public class TwoPlayerSelector implements PlayerSelector {
-    private Player[] playerList;
+    private final Player[] playerList;
     private int currentPlayer = 0;
 
     public TwoPlayerSelector() {

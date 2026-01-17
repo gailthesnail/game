@@ -1,4 +1,4 @@
-package uk.ac.mmu.game.infrastructure.playerSelection;
+package uk.ac.mmu.game.applicationcode.domainmodel.playerSelection;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.LargeBoard;
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;

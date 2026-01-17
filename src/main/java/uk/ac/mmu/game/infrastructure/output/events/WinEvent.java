@@ -1,4 +1,4 @@
-package uk.ac.mmu.game.infrastructure.events;
+package uk.ac.mmu.game.infrastructure.output.events;
 
 public class WinEvent {
     private final String playerName;

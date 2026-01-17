@@ -5,14 +5,12 @@ package uk.ac.mmu.game.temp;
 import uk.ac.mmu.game.applicationcode.domainmodel.LargeBoard;
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
 import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
-import uk.ac.mmu.game.applicationcode.domainmodel.rules.DoesNotNeedToLandOnEndToWin;
-import uk.ac.mmu.game.applicationcode.domainmodel.rules.MovesIfHitAnotherPlayer;
 import uk.ac.mmu.game.applicationcode.domainmodel.rules.NeedToLandOnEndToWin;
 import uk.ac.mmu.game.applicationcode.domainmodel.rules.StaysIfHitAnotherPlayer;
-import uk.ac.mmu.game.infrastructure.dice.NonRandomDiceShaker;
-import uk.ac.mmu.game.infrastructure.observer.GameObserver;
-import uk.ac.mmu.game.infrastructure.observer.ObservedGame;
-import uk.ac.mmu.game.infrastructure.playerSelection.FourPlayerSelector;
+import uk.ac.mmu.game.applicationcode.domainmodel.dice.NonRandomDiceShaker;
+import uk.ac.mmu.game.infrastructure.output.GameObserver;
+import uk.ac.mmu.game.applicationcode.domainmodel.ObservedGame;
+import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.FourPlayerSelector;
 
 public class Main {
     public static void main(String[] args) {

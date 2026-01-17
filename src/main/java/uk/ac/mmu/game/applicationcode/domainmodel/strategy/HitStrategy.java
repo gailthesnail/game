@@ -1,4 +1,4 @@
-package uk.ac.mmu.game.infrastructure.strategy;
+package uk.ac.mmu.game.applicationcode.domainmodel.strategy;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
 

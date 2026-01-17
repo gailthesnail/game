@@ -1,15 +1,14 @@
-package uk.ac.mmu.game.infrastructure.observer;
+package uk.ac.mmu.game.applicationcode.domainmodel;
 
-import uk.ac.mmu.game.applicationcode.domainmodel.Player;
-import uk.ac.mmu.game.applicationcode.domainmodel.PlayerIterable;
 import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
-import uk.ac.mmu.game.infrastructure.events.InitialiseEvent;
-import uk.ac.mmu.game.infrastructure.events.MoveEvent;
-import uk.ac.mmu.game.infrastructure.events.RollEvent;
-import uk.ac.mmu.game.infrastructure.events.WinEvent;
-import uk.ac.mmu.game.infrastructure.playerSelection.PlayerSelector;
-import uk.ac.mmu.game.infrastructure.strategy.HitStrategy;
-import uk.ac.mmu.game.infrastructure.strategy.IndexStrategy;
+import uk.ac.mmu.game.infrastructure.output.events.InitialiseEvent;
+import uk.ac.mmu.game.infrastructure.output.events.MoveEvent;
+import uk.ac.mmu.game.infrastructure.output.events.RollEvent;
+import uk.ac.mmu.game.infrastructure.output.events.WinEvent;
+import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerSelector;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,7 @@
-package uk.ac.mmu.game.infrastructure.observer;
+package uk.ac.mmu.game.infrastructure.output;
 
-import uk.ac.mmu.game.infrastructure.events.*;
+import uk.ac.mmu.game.applicationcode.domainmodel.observer.Observer;
+import uk.ac.mmu.game.infrastructure.output.events.*;
 
 public class GameObserver implements Observer {
     @Override
