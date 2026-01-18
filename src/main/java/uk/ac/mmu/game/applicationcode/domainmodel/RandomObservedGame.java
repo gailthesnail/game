@@ -1,21 +1,22 @@
 package uk.ac.mmu.game.applicationcode.domainmodel;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShaker;
+import uk.ac.mmu.game.applicationcode.domainmodel.dice.DiceShakerFactory;
+import uk.ac.mmu.game.applicationcode.domainmodel.observer.Observer;
 import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerIterable;
+import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerSelector;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;
+import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
 import uk.ac.mmu.game.infrastructure.driven.events.InitialiseEvent;
 import uk.ac.mmu.game.infrastructure.driven.events.MoveEvent;
 import uk.ac.mmu.game.infrastructure.driven.events.RollEvent;
 import uk.ac.mmu.game.infrastructure.driven.events.WinEvent;
-import uk.ac.mmu.game.applicationcode.domainmodel.playerSelection.PlayerSelector;
-import uk.ac.mmu.game.applicationcode.domainmodel.strategy.HitStrategy;
-import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
-import uk.ac.mmu.game.applicationcode.domainmodel.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ObservedGame {
+public class RandomObservedGame {
 
     final List<Observer> observers = new ArrayList<>();
 
@@ -51,7 +52,11 @@ public class ObservedGame {
         update(observer -> observer.onEvent(event));
     }
 
-    public void ObserveGame(DiceShaker dice, IndexStrategy indexStrategy, HitStrategy hitStrategy, Player[] playerList, PlayerSelector players) {
+
+
+    public void RandomObserveGame(DiceShakerFactory diceFactory, IndexStrategy indexStrategy, HitStrategy hitStrategy, Player[] playerList, PlayerSelector players) {
+        DiceShaker dice = diceFactory.create();
+
         init(dice, indexStrategy, hitStrategy, players);
 
         int turns = 0;

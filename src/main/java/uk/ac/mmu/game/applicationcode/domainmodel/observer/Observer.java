@@ -1,6 +1,6 @@
 package uk.ac.mmu.game.applicationcode.domainmodel.observer;
 
-import uk.ac.mmu.game.infrastructure.output.events.*;
+import uk.ac.mmu.game.infrastructure.driven.events.*;
 
 public interface Observer {
     void onEvent(RollEvent event);

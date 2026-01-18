@@ -1,6 +1,6 @@
 package uk.ac.mmu.game.applicationcode.domainmodel.playerSelection;
 
-import uk.ac.mmu.game.applicationcode.domainmodel.LargeBoard;
+import uk.ac.mmu.game.applicationcode.domainmodel.board.LargeBoard;
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
 
 public class FourPlayerSelector implements PlayerSelector {

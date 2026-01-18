@@ -1,10 +1,10 @@
 package uk.ac.mmu.game.applicationcode.domainmodel.rules;
 
 import uk.ac.mmu.game.applicationcode.domainmodel.Player;
-import uk.ac.mmu.game.infrastructure.output.GameObserver;
+import uk.ac.mmu.game.infrastructure.driven.GameObserver;
 import uk.ac.mmu.game.applicationcode.domainmodel.strategy.IndexStrategy;
 import uk.ac.mmu.game.applicationcode.domainmodel.observer.Observer;
-import uk.ac.mmu.game.infrastructure.output.events.OvershootEvent;
+import uk.ac.mmu.game.infrastructure.driven.events.OvershootEvent;
 
 import java.util.ArrayList;
 import java.util.List;
